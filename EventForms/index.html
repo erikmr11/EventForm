@@ -1,0 +1,79 @@
+<!DOCTYPE html> <!-- Document Type Declaration -->
+<html lang="en"> <!-- Start of HTML in English -->
+
+<head> <!-- Head section starts -->
+    <meta charset="UTF-8"> <!-- Set character encoding -->
+    <title>JavaScript Review Part 3</title> <!-- Set web page title -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to external CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"> <!-- Link to Bootstrap CSS -->
+</head> <!-- Head section ends -->
+
+<body class="bg-dark text-light d-flex justify-content-center align-items-center vh-100"> <!-- Body section starts, classes for styling -->
+    <div class="container bg-pastel-orange p-5 rounded"> <!-- Main container -->
+        <nav class="navbar navbar-expand-lg navbar-dark"><!--Navbar Starts-->
+            <a class="navbar-brand" href="#">JS Assignment 2</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="excel.html">Excel</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-secondary" id="toggleTheme">Toggle Theme</button>
+        </nav><!--Navbar Ends-->        
+        <div class="text-center mt-4"> <!-- Container for form -->
+            <h1>Welcome to JavaScript Assignment 2</h1> <!-- Page heading -->
+            <form id="main-form" name="mainform" class="mt-4" onsubmit="return userForm();"> <!-- Form Start -->
+                <label for="fname">First Name:</label><br>
+                <input type="text" id="fname" name="fname" class="text-center" placeholder="First Name"><br>
+                <label for="lname">Last Name:</label><br>
+                <input type="text" id="lname" name="lname" class="text-center" placeholder="Last Name"><br>
+                <label for="email">Email:</label><br>
+                <input type="email" id="email" name="email" class="text-center" placeholder="Enter your E-mail"><br>
+                <label for="address">Address:</label><br>
+                <input type="text" id="address" name="address" class="text-center" placeholder="Enter your address"><br>
+                <label for="city">City:</label><br>
+                <input type="text" id="city" name="city" class="text-center" placeholder="Toronto"><br>
+                <label for="province">Province:</label><br>
+                <input type="text" id="province" name="province" class="text-center" placeholder="ON"><br>
+                <label for="membership">Membership:</label><br>
+                <div class="membership-options">
+                    <div>
+                        <input type="radio" id="premium" name="membership" value="Premium" checked>
+                        <label for="premium">Premium</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="standard" name="membership" value="Standard">
+                        <label for="standard">Standard</label>
+                    </div>
+                    <div>
+                        <input type="radio" id="basic" name="membership" value="Basic">
+                        <label for="basic">Basic</label>
+                    </div>
+                </div>
+                <br>
+                <input type="submit" value="Submit" class="btn btn-info mb-1">
+                <input type="reset" value="Reset" class="btn btn-danger mb-1">
+            </form> <!-- Form ends -->
+
+            <div id="output" class="mt-4"> <!-- Container for output -->
+                <!-- here is where the user should see the result (output) -->
+            </div> <!-- Output container ends -->
+        </div> <!-- Form container ends -->
+    </div> <!-- Main container ends -->
+
+    <!-- Link to external scripts -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <script src="js/script.js"></script>
+</body> <!-- Body section ends -->
+
+</html> <!-- End of HTML -->
+
+

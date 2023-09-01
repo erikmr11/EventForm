@@ -1,0 +1,31 @@
+body {
+}
+
+.container {
+    margin-top: 2rem;
+}
+
+h1 {
+    margin-bottom: 1.5rem;
+}
+
+input[type="radio"] {
+    margin: 0.5rem;
+}
+input[type="text"], input[type="email"] {
+    text-align: center; /* instead of placeholder */
+}
+.membership-options {
+    display: flex;
+    width: auto; /* changed to auto */
+    justify-content: center; /* Center items horizontally */
+    align-items: center; /* Center items vertically */
+}
+#result {
+    margin-top: 2rem;
+    font-size: 1.5rem;
+}
+body.light-theme {
+    background-color: #fff!important;
+    color: #000!important;
+}

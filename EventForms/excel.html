@@ -1,0 +1,46 @@
+<!DOCTYPE html> <!-- HTML5 document type declaration -->
+<html lang="en"> <!-- Begin HTML document, English language -->
+<head> <!-- Begin head section -->
+    <meta charset="UTF-8"> <!-- Declare character encoding UTF-8 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Responsive viewport setup -->
+    <title>Excel Functions</title> <!-- Page title -->
+    <link rel="stylesheet" href="css/styles.css"> <!-- Link to custom CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" rel="stylesheet"> <!-- Link to Bootstrap CSS -->
+</head> <!-- End head section -->
+<body class="bg-dark text-light d-flex justify-content-center align-items-center vh-100"> <!-- Begin body, applying classes -->
+    <div class="container bg-pastel-orange p-5 rounded text-center"> <!-- Begin container with classes -->
+        <nav class="navbar navbar-expand-lg navbar-dark"><!--Navbar Starts-->
+            <a class="navbar-brand" href="#">JS Assignment 2</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="excel.html">Excel</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="btn btn-secondary" id="toggleTheme">Toggle Theme</button>
+        </nav><!--Navbar Ends-->        
+        <h1 class="mb-4">Excel Functions</h1> <!-- Heading 1 -->
+        <p>Enter your numbers separated by spaces: </p> <!-- Instruction text -->
+        <input id="numbers" type="text" class="form-control mb-3"> <!-- Text input field -->
+        <div class="mb-3"> <!-- Begin radio button group -->
+            <input type="radio" id="sum" name="excel">AutoSum <!-- Radio button for "AutoSum" -->
+            <input type="radio" id="avg" name="excel">Average <!-- Radio button for "Average" -->
+            <input type="radio" id="max" name="excel">Maximum <!-- Radio button for "Maximum" -->
+            <input type="radio" id="min" name="excel">Minimum <!-- Radio button for "Minimum" -->
+        </div> <!-- End radio button group -->
+        <button onclick="myExcelFuns()" class="btn btn-info mb-3" id="bt">Calculate</button> <!-- Button to initiate calculation -->
+        <h3>Result:</h3> <!-- Result heading -->
+        <p id="result">Result will be printed here</p> <!-- Area for result display -->
+    </div> <!-- End container -->
+    <script src="js/script.js"></script> <!-- Link to external JS -->
+</body> <!-- End body -->
+</html> <!-- End HTML document -->
+
+
